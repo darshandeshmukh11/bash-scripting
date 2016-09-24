@@ -10,4 +10,7 @@ echo "\nTop 5 processes with maximum number of threads\n" `top -b -n 1 | head -n
 
 # Sort and display services by memory usage
 echo "\nTop 5 services by memory usage\n" `ps aux --sort rss | head -5`
+
+# Display hostname
+echo "\nHostname is" `ps r|wc`  
 exit
